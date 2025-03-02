@@ -6,19 +6,16 @@ from time import sleep
 # Virtual key code for down arrow
 VK_DOWN = 0x28
 
-# Load the pre-trained face detection model
 face_net = cv2.dnn.readNet(
     r"c:\Users\rahat\OneDrive\Desktop\Learning materials\no_pushup_no_reel\deploy.prototxt.txt",
     r"c:\Users\rahat\OneDrive\Desktop\Learning materials\no_pushup_no_reel\res10_300x300_ssd_iter_140000.caffemodel"
 )
 
-# Initialize video capture
 cap = cv2.VideoCapture(0)
 
-# Initialize variables for head tracking
 prev_y = None
-movement_threshold = 30  # Adjust this value based on sensitivity needs
-cooldown = 0  # Cooldown counter for key press
+movement_threshold = 30  
+cooldown = 0 
 
 while True:
     # Read frame from the camera
