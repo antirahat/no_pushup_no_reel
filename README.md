@@ -9,7 +9,7 @@ No pushup, no reel uses the help of OpenCV DNN headtracking and simulate a keyst
 
 3. Open the project in vscode
 ```bash
-cd no_pushup_no_reel
+   cd no_pushup_no_reel
 ```
 
 ## How it works
